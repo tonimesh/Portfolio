@@ -1,0 +1,44 @@
+.resume {
+  background: white;
+  color: black;
+  min-height: 100vh;
+  height: fit-content;
+  padding-bottom: 10px;
+  transition: all 200ms ease-in-out;
+}
+*::selection {
+    color: gold;
+    background: black;
+}
+.dark *::selection {
+    color: black;
+    background: gold;
+}
+.resume.dark {
+  background: #222;
+  color: white;
+}
+#download a {
+    border: none;
+  background: var(--common-gradient-light);
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 500ms ease-in-out;
+}
+.dark #download a {
+  background: var(--common-gradient-dark);
+}
+#download a:hover {
+    background:var(--common-gradient-light) 225px;
+}
+.dark #download a:hover {
+    background:var(--common-gradient-dark) 225px;
+}
+.ending{
+  font-size: 12px;
+  color: gold;
+  display: block;
+  text-align: center;
+  width: 100%;
+}

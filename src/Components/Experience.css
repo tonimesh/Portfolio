@@ -1,0 +1,24 @@
+@media (min-width: 1024px){
+    .exp {
+        max-width: 900px;
+        padding: 20px;
+    }
+}
+@media (max-width:919px){
+    .exp .left, 
+    .exp .right {
+        width: 100%;
+    }
+    .exp .row {
+        justify-content: center;
+    }
+}
+
+.exp .left {
+    min-width: 194px;
+}
+
+.exp .left,
+.exp .right {
+    text-align: justify;
+}

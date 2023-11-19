@@ -1,0 +1,11 @@
+.about img{
+    height: 165px;
+    transform: skewX(0deg);
+    transition: all 400ms ease-in-out;
+    filter:grayscale()
+}
+.about:hover img{
+    transform: rotateY(-15deg);
+    box-shadow: rgba(0, 0, 0, 0.26) 0px 12px 30px 4px;
+    filter:none
+}
