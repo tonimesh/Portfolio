@@ -13,7 +13,7 @@
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --common-gradient-light: linear-gradient(157.81deg,#000000 -43.27%,#000000 -21.24%,#525252 12.19%,#4f4f4f 29.82%,#27260f 51.94%,#cfa033 90.29%);
+  --common-gradient-light: linear-gradient(to right, #F37335, #FDC830);
   --common-gradient-dark: linear-gradient(157.81deg,#faf7de -43.27%,#ecf5be -21.24%,#eef09d 12.19%,#e0eb7d 29.82%,#e6e25c 51.94%,#cfa033 90.29%);
 }
 
