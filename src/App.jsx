@@ -10,6 +10,7 @@ import Skill from './Components/Skill';
 import Experience from './Components/Experience';
 import About from './Components/About';
 import Footer from './Components/footer';
+import pic from "./assets/Photo.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
@@ -113,10 +114,17 @@ function App() {
           ]}
         />
 
-        <About/>
+        <About
+          pic = {pic}
+          about_text = {
+            `Hello, I'm Tonimesh Mondal, and I work as a front-end developer using React Js and learning MERN Stack. I have completed MCA  from Kalyani Govt. Engg. College, where I achieved a good CGPA of 9.2, I had the opportunity to intern as a React.js developer at Step to Soft.
+            I've also started learning about backend development with Node.js. My goal for the future is to become a skilled full-stack developer.
+            I'm really passionate about web development. I enjoy learning about JavaScript and find satisfaction in solving web development challenges.`
+          }
+        />
         <Footer/>
         <br />
-         <span className='mt-4 ending mx-auto'>Developed by Tonimesh Mondal</span>
+        <span className='mt-4 ending mx-auto'>Developed by Tonimesh Mondal</span>
          
       </div>
 

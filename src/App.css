@@ -36,9 +36,13 @@
     background:var(--common-gradient-dark) 225px;
 }
 .ending{
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 500;
   color: gold;
   display: block;
   text-align: center;
   width: 100%;
+}
+.light .ending {
+  color: darkgoldenrod;
 }
