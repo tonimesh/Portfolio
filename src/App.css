@@ -1,5 +1,5 @@
 .resume {
-  background: white;
+  /* background: white; */
   color: black;
   min-height: 100vh;
   height: fit-content;
@@ -12,10 +12,10 @@
 }
 .dark *::selection {
     color: black;
-    background: gold;
+    background: #ffd700;
 }
 .resume.dark {
-  background: #222;
+  /* background: #222; */
   color: white;
 }
 #download a {
@@ -45,4 +45,8 @@
 }
 .light .ending {
   color: darkgoldenrod;
+}
+#tsparticles{
+  height: 100%;
+  width:100%;
 }

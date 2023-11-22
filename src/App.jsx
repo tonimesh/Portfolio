@@ -4,7 +4,7 @@ import Header from './Components/Header';
 import Hero from './Components/Hero';
 import 'bootstrap/dist/css/bootstrap.css';
 import Floater from './Components/Floater';
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import resume from './assets/Resume.pdf';
 import Skill from './Components/Skill';
 import Experience from './Components/Experience';
@@ -13,6 +13,8 @@ import Footer from './Components/footer';
 import pic from "./assets/Photo.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import Particles from 'react-particles';
+import { loadSlim } from "tsparticles-slim";
 
 
 function App() {
@@ -38,10 +40,95 @@ function App() {
     downloadFile();
   }
 
+  const particlesInit = useCallback(async engine => {
+    console.log(engine);
+    await loadSlim(engine);
+  }, []);
+
+  const particlesLoaded = useCallback(async container => {
+      await console.log(container);
+  }, []);
 
   return (
     <>
-      <div className={"resume " + (isLight ? "light" : "dark")}>
+      <div style={{position:"absolute", bottom: 0, top: 0, left: 0, right: 0}}>
+        <Particles id="tsparticles"
+          init={particlesInit}
+          loaded={particlesLoaded}
+          options={{
+              background: {
+                  color: {
+                      value: isLight ? "#f5f5c5" : "#050505",
+                  },
+              },
+              fpsLimit: 120,
+              // interactivity: {
+              //     events: {
+              //         onClick: {
+              //             enable: true,
+              //             mode: "push",
+              //         },
+              //         onHover: {
+              //             enable: true,
+              //             mode: "repulse",
+              //         },
+              //         resize: true,
+              //     },
+              //     modes: {
+              //         push: {
+              //             quantity: 4,
+              //         },
+              //         repulse: {
+              //             distance: 200,
+              //             duration: 0.4,
+              //         },
+              //     },
+              // },
+              particles: {
+                  color: {
+                      value: isLight ? "#F37335" : "#ffffff",
+                  },
+                  links: {
+                      color: isLight ? "#ada7f1" : "#ffffff",
+                      distance: 100,
+                      enable: true,
+                      opacity: 0.5,
+                      width: 1,
+                  },
+                  move: {
+                      direction: "none",
+                      trail: true,
+                      enable: true,
+                      outModes: {
+                          default: "bounce",
+                      },
+                      random: false,
+                      speed: 2,
+                      straight: true,
+                  },
+                  number: {
+                      density: {
+                          enable: true,
+                          area: 800,
+                      },
+                      value: 80,
+                  },
+                  opacity: {
+                      value: 0.5,
+                  },
+                  shape: {
+                      type: "circle",
+                  },
+                  size: {
+                      value: { min: 1, max: 5 },
+                  },
+              },
+              detectRetina: true,
+          }}
+        />
+      </div>
+    
+      <div className={"resume " + (isLight ? "light" : "dark")} style={{position:"absolute"}}>
         <Header lightState={[isLight, setIsLight]} />
 
         {/* Body */}
@@ -90,22 +177,22 @@ function App() {
         </div>
         <br />
 
-        <Experience 
-          experienceList = {[
+        <Experience
+          experienceList={[
             {
-                org:"Step to Soft",
-                post:"Frontend Developer",
-                span:"Dec 2022 - present",
-                details:`Creating and managing App using HTML, CSS, JAVASCRIPT, REACT, REDUX, BOOTSTRAP and MATERIAL UI.
+              org: "Step to Soft",
+              post: "Frontend Developer",
+              span: "Dec 2022 - present",
+              details: `Creating and managing App using HTML, CSS, JAVASCRIPT, REACT, REDUX, BOOTSTRAP and MATERIAL UI.
                 \n I have work closely with senior developers and the development team to learn and enhance my skills.
                 \nCreating reusable components to optimize code and speed of web app.
                 \nCreating User Friendly UI with responsive design.`
             },
             {
-                org:"CloudKaptan",
-                post:"Software Engineer-Trainee",
-                span:"May 2022 - Nov 2022",
-                details:`Created Recruiting App using Salesforce Record Types, Custom Object, Salesforce Flow, Approval process, Email
+              org: "CloudKaptan",
+              post: "Software Engineer-Trainee",
+              span: "May 2022 - Nov 2022",
+              details: `Created Recruiting App using Salesforce Record Types, Custom Object, Salesforce Flow, Approval process, Email
                 Alerts.\n
                  Apex Class and Test class Writing in project.\n
                 Worked on a live project of an fin-tech Company.\n
@@ -115,17 +202,17 @@ function App() {
         />
 
         <About
-          pic = {pic}
-          about_text = {
+          pic={pic}
+          about_text={
             `Hello, I'm Tonimesh Mondal, and I work as a front-end developer using React Js and learning MERN Stack. I have completed MCA  from Kalyani Govt. Engg. College, where I achieved a good CGPA of 9.2, I had the opportunity to intern as a React.js developer at Step to Soft.
             I've also started learning about backend development with Node.js. My goal for the future is to become a skilled full-stack developer.
             I'm really passionate about web development. I enjoy learning about JavaScript and find satisfaction in solving web development challenges.`
           }
         />
-        <Footer/>
+        <Footer />
         <br />
         <span className='mt-4 ending mx-auto'>Developed by Tonimesh Mondal</span>
-         
+
       </div>
 
     </>
