@@ -128,7 +128,7 @@ function App() {
         />
       </div>
     
-      <div className={"resume " + (isLight ? "light" : "dark")} style={{position:"absolute"}}>
+      <div className={"resume " + (isLight ? "light" : "dark")} style={{position:"absolute", width:"100%"}}>
         <Header lightState={[isLight, setIsLight]} />
 
         {/* Body */}
