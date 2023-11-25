@@ -7,7 +7,7 @@ function Hero({heading, linkedin, github, gitlab,id}) {
   
   return (
     <div className='heroheader'>
-      <h1 id={id} className='text-center mt-3 mb-3'>{heading}</h1>
+      <h1 id={id} className='text-center mt-3 mb-3 px-4'>{heading}</h1>
       <div className="item text-center">
         
         <svg style={
