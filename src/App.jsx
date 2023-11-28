@@ -196,7 +196,7 @@ function App() {
                 Alerts.\n
                  Apex Class and Test class Writing in project.\n
                 Worked on a live project of an fin-tech Company.\n
-                Creating User Friendly UI with responsive`
+                Creating User Friendly UI with responsive.`
             },
           ]}
         />

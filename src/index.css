@@ -84,7 +84,7 @@ img {
   -webkit-background-clip: text;
   background-clip: text;
 }
-h1,p,a{
+h1,a{
   font-family: 'Montserrat', sans-serif;
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
