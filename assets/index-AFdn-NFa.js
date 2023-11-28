@@ -814,6 +814,6 @@ Creating User Friendly UI with responsive design.`},{org:"CloudKaptan",post:"Sof
 
                 Worked on a live project of an fin-tech Company.
 
-                Creating User Friendly UI with responsive`}]}),x.jsx(ry,{pic:oy,about_text:`Hello, I'm Tonimesh Mondal, and I work as a front-end developer using React Js and learning MERN Stack. I have completed MCA  from Kalyani Govt. Engg. College, where I achieved a good CGPA of 9.2, I had the opportunity to intern as a React.js developer at Step to Soft.
+                Creating User Friendly UI with responsive.`}]}),x.jsx(ry,{pic:oy,about_text:`Hello, I'm Tonimesh Mondal, and I work as a front-end developer using React Js and learning MERN Stack. I have completed MCA  from Kalyani Govt. Engg. College, where I achieved a good CGPA of 9.2, I had the opportunity to intern as a React.js developer at Step to Soft.
             I've also started learning about backend development with Node.js. My goal for the future is to become a skilled full-stack developer.
             I'm really passionate about web development. I enjoy learning about JavaScript and find satisfaction in solving web development challenges.`}),x.jsx(sy,{}),x.jsx("br",{}),x.jsx("span",{className:"mt-4 ending mx-auto",children:"Developed by Tonimesh Mondal"})]})]})}wa.createRoot(document.getElementById("root")).render(x.jsx(Gi.StrictMode,{children:x.jsx(Cx,{})}));
