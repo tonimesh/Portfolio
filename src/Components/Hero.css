@@ -9,6 +9,24 @@
 .dark .item svg path {
     fill: url(#my-dark-gradient);
 }
+/* .name{
+    background: url("./animated-text.png") repeat-y;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color:transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: toni 80s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+} */
+/* @keyframes toni {
+    0%{
+        background-position: 0% 50%;
+      }
+      100%{
+        background-position: 50% 100%;
+      }
+} */
 
 .heroheader h1{
     font-size: 72px;

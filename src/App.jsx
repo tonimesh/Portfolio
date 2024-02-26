@@ -147,7 +147,7 @@ function App() {
         <div className="d-flex flex-wrap justify-content-center">
           <ProjectCard
             imgSrc="./coffe-shop.PNG"
-            title="Coffe Shop"
+            title="Coffee Shop"
             desc="Developed a responsive and visually appealing website for a local coffee shop using HTML and CSS. The website aimed to showcase the shop's ambiance, menu offerings, and services. Incorporated a modern and inviting design with CSS Flexbox/Grid for layout structuring and responsiveness across various devices.
             Tech Stack-Html, Css"
             gitUrl="https://github.com/tonimesh/coffe-shop" webUrl="https://tonimesh.github.io/coffe-shop/"
@@ -180,9 +180,9 @@ function App() {
         <Experience
           experienceList={[
             {
-              org: "Step to Soft",
-              post: "Frontend Developer",
-              span: "Dec 2022 - present",
+              org: "Webstep Technologies",
+              post: "Analyst Web Designer",
+              span: "Dec 2023 - present",
               details: `Creating and managing App using HTML, CSS, JAVASCRIPT, REACT, REDUX, BOOTSTRAP and MATERIAL UI.
                 \n I have work closely with senior developers and the development team to learn and enhance my skills.
                 \nCreating reusable components to optimize code and speed of web app.
@@ -204,7 +204,7 @@ function App() {
         <About
           pic={pic}
           about_text={
-            `Hello, I'm Tonimesh Mondal, and I work as a front-end developer using React Js and learning MERN Stack. I have completed MCA  from Kalyani Govt. Engg. College, where I achieved a good CGPA of 9.2, I had the opportunity to intern as a React.js developer at Step to Soft.
+            `Hello, I'm Tonimesh Mondal, and I work as a front-end developer using React Js and learning MERN Stack. I have completed MCA  from Kalyani Govt. Engg. College, where I achieved a good CGPA of 9.28, I trained as a React.js developer at Step to Soft.
             I've also started learning about backend development with Node.js. My goal for the future is to become a skilled full-stack developer.
             I'm really passionate about web development. I enjoy learning about JavaScript and find satisfaction in solving web development challenges.`
           }
