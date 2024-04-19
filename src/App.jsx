@@ -175,8 +175,8 @@ function App() {
         {/* project list */}
         <h1 id="projects" className='gradient-h my-3 text-center'>Projects</h1>
         <div className="d-flex flex-wrap justify-content-center">
-          <OwlCarousel className='owl-theme' loop autoplay autoplayHoverPause autoplayTimeout={800}
-            autoplaySpeed={800} margin={10} responsive={{
+          <OwlCarousel className='owl-theme' loop autoplay autoplayHoverPause autoplayTimeout={3000}
+            autoplaySpeed={1000} margin={10} responsive={{
               0: {
                 items: 1
               },
