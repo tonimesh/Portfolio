@@ -237,9 +237,18 @@ function App() {
         <Experience
           experienceList={[
             {
+              org: "Ayurs Infotech",
+              post: "Web Developer",
+              span: "May 2024 - present",
+              details: `Creating and managing App using HTML, CSS, JAVASCRIPT, REACT, REDUX, BOOTSTRAP and MATERIAL UI.
+                \n I have work closely with senior developers and the development team to learn and enhance my skills.
+                \nCreating reusable components to optimize code and speed of web app.
+                \nCreating User Friendly UI with responsive design.`
+            },
+            {
               org: "Webstep Technologies",
               post: "Analyst Web Designer",
-              span: "Dec 2023 - present",
+              span: "Dec 2023 - Feb 2024",
               details: `Creating and managing App using HTML, CSS, JAVASCRIPT, REACT, REDUX, BOOTSTRAP and MATERIAL UI.
                 \n I have work closely with senior developers and the development team to learn and enhance my skills.
                 \nCreating reusable components to optimize code and speed of web app.
